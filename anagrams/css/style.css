@@ -27,11 +27,28 @@ body p{
   width:300px;
 }
 .wrapperInner{
-  min-height:416px;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 90%;
 }
 .wrapperInner p{
   padding: 20px;
 }
 footer{
-  margin-top: 300px;
+  padding: 1em;
+  position: absolute;
+  bottom: 0px;
+  
+}
+footer a{
+  padding:.5em;
+  color: white;
+  text-decoration: none;
+}
+footer a:hover{
+  border-radius: 1em;
+  background-color: white;
+  color:green;
+  position: relative;
+  bottom: 4px;
 }

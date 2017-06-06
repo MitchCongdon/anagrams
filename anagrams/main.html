@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Version 1.1 -->
 		<meta charset="utf-8">
 		<title>Anagram Detector</title>
 	  <link rel="stylesheet" href="css/style.css">
@@ -8,10 +9,11 @@
 	<body>
 		<header>
 			<h1>Equal Anagram Detector</h1>
-			<h4>VERSION 1.0</h4>
+			<h4>VERSION 1.1</h4>
 		</header>
 		<div class="wrapperInner">
-			<p>Enter two words and click submit. This program will sort the words alphabetically and compare them to determine if they are an equal anagram.</p>
+			<p>Enter two words and click submit. This program will sort the charactors in each phrase alphabetically and compare them to determine if they are an equal anagram.</p>
+			
 	  <!-- collect data from user -->
 			<form>
 				<h1>Please enter words</h1>
@@ -22,8 +24,11 @@
 			  <input id="submit" type="button" value="Submit" onclick="save();"/>
 	  <!-- print out from JavaScript to document -->
 				<p id="printOut"></p>
+				<p>*Note: Currently this program has some bugs. For example: "nag a ram" and "anagram" are an anagram, but, unfortunately, the program currently takes spaces into account.</p>
 		</div>
 			<footer>
+				<a href="https://en.wikipedia.org/wiki/Anagram" target="_blank">Anagram WikiPedia</a>
+				<a href="https://github.com/MitchCongdon?tab=repositories" target="_blank">GitHub Repositories</a>
 				<p>A Mitchell Congdon Project</p>
 			</footer>
 		<script src="app.js"></script>

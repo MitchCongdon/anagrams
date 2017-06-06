@@ -5,6 +5,7 @@ var buttonPress = document.getElementById("submit");
 function printPrevWords() {
     var i = ("Previous set of words, sorted : " + prevWords);
     document.getElementById("printOut").innerHTML = i;
+    prevWords = [];
 };
 function save(){
 	var word1 = document.getElementById("word1id").value;
@@ -16,14 +17,14 @@ function save(){
 		prevWords.push(word1,word2);
 		console.log(prevWords);
 		printPrevWords();
-		alert("True anagram");
+		alert("This is an equal anagram");
 
 		return true;
 	}
 	else {
 		prevWords.push(word1,word2);
 		printPrevWords();
-		alert("false anagram");
+		alert("Not an equal anagram");
 		return false;
 	}
 };
