@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Version 1.1 -->
+		<!-- Version 1.2 -->
 		<meta charset="utf-8">
 		<title>Anagram Detector</title>
-	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/anagrams.css">
 	</head>
 	<body>
+	
 		<header>
 			<h1>Equal Anagram Detector</h1>
-			<h4>VERSION 1.1</h4>
+			<h4>VERSION 1.2</h4>
 		</header>
+		<img src="css/pics/js.jpg">
 		<div class="wrapperInner">
-			<p>Enter two words and click submit. This program will sort the charactors in each phrase alphabetically and compare them to determine if they are an equal anagram.</p>
+			<p class="p1">Enter two words and click submit. This program will sort the charactors in each phrase alphabetically and compare them to determine if they are an equal anagram.</p>
 			
 	  <!-- collect data from user -->
+	  		<h1>Please enter words</h1>
 			<form>
-				<h1>Please enter words</h1>
-	    <input id="word1id" type="text" />
-			<br>
-			<input id="word2id" type="text" />
-			<br>
-			  <input id="submit" type="button" value="Submit" onclick="save();"/>
+	    	<p>First Word:<input id="word1id" type="text" /></p>
+			<p>Second Word:<input id="word2id" type="text" /></p>
+			</form>
+			<input id="submit" type="button" value="Submit" onclick="save();"/>
 	  <!-- print out from JavaScript to document -->
 				<p id="printOut"></p>
-				<p>*Note: Currently this program has some bugs. For example: "nag a ram" and "anagram" are an anagram, but, unfortunately, the program currently takes spaces into account.</p>
+				<p>mmm... anagrams</p>
 		</div>
 			<footer>
 				<a href="https://en.wikipedia.org/wiki/Anagram" target="_blank">Anagram WikiPedia</a>
